@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether-APP</title>
+    <link rel="stylesheet" href ="/style.css">
+</head>
+<body>
+    <div class="container">
+     <div class="nav">
+      <form action="/submit" method="post">
+        <input type="text" placeholder="enter city name" name="city" spellcheck="false">
+        <button><img src="/images/search.png"></button>
+      </form>
+      </div>
+     <div class="whether">
+         <img src="/images/clouds.png">
+         <%if(locals.weatherData){%>
+         <h1><%=weatherData%></h1>
+         <%}%>
+         <%if(locals.cty){%>
+         <h2><%=cty%></h2>
+         <%}%>
+         <div class="bc">
+          <dic class="cr">
+            <img src="/images/humidity.png" alt="">
+            <h3>90%</h3>
+            <p>Humidity</p>
+          </div>
+          <dic class="kr">
+            <img src="/images/wind.png" alt="">
+            <h3>2.68kmh</h3>
+            <p>wind speed</p>
+         </div>
+        </div>
+     </div>
+    
+    </div>
+</body>
+</html>
