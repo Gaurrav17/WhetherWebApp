@@ -5,29 +5,37 @@
 }
 
 .nav{   /*14.6*/
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    justify-content: space-between;
+   
+    
+    /*margin: 10px;*/
+    
+    padding: 10px;
+   
 }
 
-.nav button{
+form button{
    border-radius: 50%;
    background-color: white;
-   margin: 10px;
+   /*margin: 10px;*/
+   margin-left: 10px;
    border: none;
-   height: 50px;
-   width: 50px;
+   height: 65px;
+   width: 65px;
    cursor: pointer;
 }
 
-.nav input{
-    padding: 10px 25px;
+form input{
+    /*padding: 10px 25px;*/
     border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 15px;
     /*padding-right: 70px;*/
     font-size: 18px;
     border: none;
     flex: 1;
+   
 }
 
 button img{
@@ -48,16 +56,49 @@ button img{
 
 .bc{
     display: flex;
-    margin-top: 80px;
-    align-items: center;
+    margin-top: 100px;
+    
     justify-content: space-around;
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: relative;
     
 }
+.cr{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    left: 350px;
+    top: 12px;
+    right: 2px;
+}
+
+.kr{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    
+}
+.st1{  
+    margin-top: 70px;
+}
+
+@media (max-width:350px){
 
 
-
+    .bc{
+        display: flex;
+        margin-top: 100px;      
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        
+    }
+}
 
  
 
